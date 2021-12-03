@@ -1,0 +1,23 @@
+{
+  "name": "wakatime-stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick22985/Wakatime-Stats.git"
+  },
+  "author": "nick22985",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nick22985/Wakatime-Stats/issues"
+  },
+  "homepage": "https://github.com/nick22985/Wakatime-Stats#readme",
+  "dependencies": {
+    "wakatime-client": "^2.7.0"
+  }
+}
