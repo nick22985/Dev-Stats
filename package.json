@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./index.js"
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/nick22985/Wakatime-Stats#readme",
   "dependencies": {
+    "luxon": "^2.1.1",
     "wakatime-client": "^2.7.0"
   }
 }
