@@ -5,6 +5,6 @@ Js data fetching from waka time and github
 
 
 
-#Inspired From
+# Inspired From
 
 https://github.com/anmol098/waka-readme-stats
