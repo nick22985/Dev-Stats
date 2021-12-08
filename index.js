@@ -18,6 +18,26 @@ let staticCapture = false;
 let wakatime_api_key = process.env.WAKATIME_API_KEY;
 let gh_token = process.env.GH_TOKEN;
 
+let settings = {
+	showShortInfo: true,
+	showCommits: true,
+	showDayOfWeek: true,
+	showBreakDown: true,
+	showTimeZone: true,
+	showEditors: true,
+	showLanguages: true,
+	showOS: true,
+	showHosts: true,
+	showLanguagePerRepo: true,
+	showProjects: true,
+	excludeProjects: process.env.EXLUDE_PROJECT,
+	graph: [
+		'█░',
+		25
+	],
+	rowLength: 80,
+}
+
 async function start() {
 	let devStats = {
 		github: {},
@@ -44,7 +64,12 @@ async function start() {
 		Settings.defaultZoneName = devStats.wakatime.timezone;
 		devStats.currentDate = DateTime.local()
 		// console.log(devStats.currentDate)
-		let formatted = await formatDoc(devStats)
+		if(settings.excludeProjects) {
+			settings.excludeProjects = settings.excludeProjects.split(', ')
+			console.log(settings.excludeProjects)
+		}
+		let formatted = await formatDoc(devStats, settings)
+		writeFile('./format.md', formatted)
 		console.log(formatted)
 
 	}
