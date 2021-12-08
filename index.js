@@ -1,4 +1,4 @@
-import fs, { write } from 'fs';
+import fs from 'fs';
 import * as dotenv from 'dotenv';
 import chalk from 'chalk';
 import { DateTime, Settings } from "luxon"; // Not needed maybe?

@@ -1,4 +1,4 @@
-> 866 Contributions in the Year of 2021
+> 867 Contributions in the Year of 2021
 >
 > 299.44 KB Used in GitHub's Storage
 >
@@ -10,20 +10,20 @@
 
 **I Mostly code in the Daytime**
 ```text
-Morning                   52 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   9.54%
-Daytime                   213 commits         █████████░░░░░░░░░░░░░░░░   39.08%
-Evening                   155 commits         ███████░░░░░░░░░░░░░░░░░░   28.44%
-Night                     125 commits         █████░░░░░░░░░░░░░░░░░░░░   22.94%
+Morning                   52 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   9.52%
+Daytime                   213 commits         █████████░░░░░░░░░░░░░░░░   39.01%
+Evening                   155 commits         ███████░░░░░░░░░░░░░░░░░░   28.39%
+Night                     126 commits         █████░░░░░░░░░░░░░░░░░░░░   23.08%
 ```
 **I'm Most Productive on Wednesday**
 ```text
-Monday                    91 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.7%
-Tuesday                   105 commits         ████░░░░░░░░░░░░░░░░░░░░░   19.27%
-Wednesday                 111 commits         █████░░░░░░░░░░░░░░░░░░░░   20.37%
-Thursday                  64 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   11.74%
-Friday                    93 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.06%
-Saturday                  30 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   5.5%
-Sunday                    51 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   9.36%
+Monday                    91 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.67%
+Tuesday                   105 commits         ████░░░░░░░░░░░░░░░░░░░░░   19.23%
+Wednesday                 111 commits         █████░░░░░░░░░░░░░░░░░░░░   20.33%
+Thursday                  65 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   11.9%
+Friday                    93 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.03%
+Saturday                  30 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   5.49%
+Sunday                    51 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   9.34%
 ```
 This Week I spent My Time On:
 ```text
