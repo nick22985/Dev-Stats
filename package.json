@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js",
+    "start": "node --experimental-json-modules ./index.js",
 	"debug" : "node index.js > indesx.log  2>&1"
   },
   "repository": {
