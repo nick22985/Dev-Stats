@@ -11,8 +11,8 @@ import staticDevStats from './data/devStats.json'
 
 dotenv.config();
 
-let dev = true;
-let staticCapture = false;
+let dev = false;
+let staticCapture = true;
 
 
 let wakatime_api_key = process.env.WAKATIME_API_KEY;
