@@ -30,7 +30,7 @@ let settings = {
 	showHosts: true,
 	showLanguagePerRepo: true,
 	showProjects: true,
-	excludeProjects: process.env.EXLUDE_PROJECT,
+	excludeProjects: process.env.EXCLUDE_PROJECT,
 	graph: [
 		'█░',
 		25
@@ -63,7 +63,6 @@ async function start() {
 
 		Settings.defaultZoneName = devStats.wakatime.timezone;
 		devStats.currentDate = DateTime.local()
-		// console.log(devStats.currentDate)
 		if(settings.excludeProjects) {
 			settings.excludeProjects = settings.excludeProjects.split(', ')
 			console.log(settings.excludeProjects)
@@ -71,7 +70,6 @@ async function start() {
 		let formatted = await formatDoc(devStats, settings)
 		writeFile('./format.md', formatted)
 		console.log(formatted)
-
 	}
 	catch (e){console.log(e)}
 }
