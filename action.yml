@@ -2,15 +2,16 @@ name: "Profile Readme Dev Stats"
 author: nick22985
 description: "Gets wakatime & github stats and displays it on your readme page"
 
-env:
-  GH_TOKEN:
-    description: "Github access token with Repo Scope"
-    required: true
-    default: ${{ github.token }}
 
-  WAKATIME_API_KEY:
-    description: "Wakatime API key"
-    required: true
 
 runs:
   using: 'node16'
+  env:
+    GH_TOKEN:
+      description: "Github access token with Repo Scope"
+      required: true
+      default: ${{ github.token }}
+
+    WAKATIME_API_KEY:
+      description: "Wakatime API key"
+      required: true
