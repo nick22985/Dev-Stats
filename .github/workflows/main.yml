@@ -9,27 +9,27 @@ jobs:
     name: Update Readme with Metrics
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16.10.0'
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run dev --if-present
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          EXCLUDE_PROJECT: ${{ secrets.EXCLUDE_PROJECT }}
-          SHOW_SHORT_INFO: "true"
-          SHOW_COMITS: "true"
-          SHOW_DAY_OF_WEEK: "true"
-          SHOW_BREAK_DOWN: "true"
-          SHOW_TIMEZONE: "true"
-          SHOW_EDITORS: "true"
-          SHOW_LANGUAGES: "true"
-          SHOW_OS: "true"
-          SHOW_HOSTS: "true"
-          SHOW_LANGUAGE_PER_REPO: "true"
-          SHOW_PROJECTS: "true"
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.10.0'
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run dev --if-present
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        EXCLUDE_PROJECT: ${{ secrets.EXCLUDE_PROJECT }}
+        SHOW_SHORT_INFO: "true"
+        SHOW_COMITS: "true"
+        SHOW_DAY_OF_WEEK: "true"
+        SHOW_BREAK_DOWN: "true"
+        SHOW_TIMEZONE: "true"
+        SHOW_EDITORS: "true"
+        SHOW_LANGUAGES: "true"
+        SHOW_OS: "true"
+        SHOW_HOSTS: "true"
+        SHOW_LANGUAGE_PER_REPO: "true"
+        SHOW_PROJECTS: "true"
           
