@@ -1,5 +1,5 @@
 # Developer Stats
-This project was based of the 📌✨Awesome Readme Stats. The reason I created this was to save github action time and reduce the over all run time of the stats. I hope to branch out and create something different to the orignal design eventually. I am happy to talk all input in what people want in this project.
+This project was based of the 📌✨Awesome Readme Stats. The reason I created this was to save github action time and reduce the over all run time of the stats. I hope to branch out and create something different to the orignal design eventually. If you want a feature request please make a Issue for it
 
 ## Setup
 1. You will need to insert the injection points into your .md file in your profile readme. 
