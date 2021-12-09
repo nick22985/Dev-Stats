@@ -5,8 +5,8 @@ on:
     - cron: '0 14 * * *'
   workflow_dispatch:
 jobs:
-  update-readme:
-    name: Update Readme with Metrics
+  updateReadme:
+    name: "Update Readme with Metrics"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
