@@ -12,3 +12,5 @@ inputs:
     description: "Wakatime API key"
     required: true
 
+runs:
+  using: 'node16'
