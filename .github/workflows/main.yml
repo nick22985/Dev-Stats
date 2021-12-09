@@ -1,12 +1,12 @@
-name: Dev Readme Stats Update
+name: Dev Stats
 
 on:
   schedule:
-    - cron: '0 14 * * *'
+    - cron: '30 6 * * 00'
   workflow_dispatch:
 jobs:
-  updateReadme:
-    name: "Update Readme with Metrics"
+  DevStats:
+    name: "Update Stats"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -16,7 +16,7 @@ jobs:
         node-version: '16.10.0'
         cache: 'npm'
     - run: npm ci
-    - run: npm run dev --if-present
+    - run: npm run start --if-present
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
