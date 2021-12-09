@@ -18,4 +18,6 @@ jobs:
       - run: npm ci
       - run: npm run dev --if-present
         env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           EXCLUDE_PROJECT: ${{ secrets.EXCLUDE_PROJECT }}
