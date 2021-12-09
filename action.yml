@@ -2,11 +2,6 @@ name: "Profile Readme Dev Stats"
 author: nick22985
 description: "Gets wakatime & github stats and displays it on your readme page"
 
-
-name: "Profile Readme Dev Stats"
-author: "nick22985"
-description: "Gets wakatime & github stats and displays it on your readme page"
-
 inputs:
   GH_TOKEN:
     description: "Github access token with Repo Scope"
