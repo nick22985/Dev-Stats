@@ -11,4 +11,3 @@ inputs:
   WAKATIME_API_KEY:
     description: "Wakatime API key"
     required: true
-    default: ${{ wakatime.key }}
