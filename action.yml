@@ -1,5 +1,5 @@
 name: "Profile Readme Dev Stats"
-author: "nick22985"
+author: nick22985
 description: "Gets wakatime & github stats and displays it on your readme page"
 
 inputs:
@@ -12,51 +12,3 @@ inputs:
     description: "Wakatime API key"
     required: true
 
-  SHOW_SHORT_INFO:
-    description: "Github Summary"
-    required: false
-    default: "true"
-
-  SHOW_BREAK_DOWN:
-    description: "Shows language activity for that week"
-    required: false
-    default: "true"
-
-  SHOW_TIMEZONE:
-    description: "Shows timezone. Requires SHOW_BREAK_DOWN=true"
-    required: false
-    default: "true"
-
-  SHOW_EDITORS:
-    description: "Shows editors used in the week SHOW_BREAK_DOWN=true"
-    required: false
-    default: "true"
-
-  SHOW_LANGUAGES:
-    description: "Show week coding language breakdown"
-    required: false
-    default: "true"
-
-  SHOW_OS:
-    description: "Shows Operating System"
-    required: false
-    default: "true"
-
-  SHOW_HOSTS:
-    description: "Show Hostnames of computers"
-    required: false
-    default: "true"
-
-  SHOW_LANGUAGE_PER_REPO:
-    description: "Shows github repo language counts"
-    required: false
-    default: "true"
-
-  SHOW_PROJECTS:
-    description: "Show Projects worked on that week"
-    required: false
-    default: "true"
-
-  EXCLUDE_PROJECT:
-    description: "You can exclude repos that you don"t want showing on your readme page"
-    required: false
