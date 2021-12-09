@@ -59,3 +59,4 @@ inputs:
   EXCLUDE_PROJECT:
     description: 'You can exclude repos that you don't want showing on your readme page'
     required: false
+    default: ''
