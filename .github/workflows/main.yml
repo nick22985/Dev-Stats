@@ -1,0 +1,21 @@
+name: Dev Readme Stats Update
+
+on:
+  schedule:
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+jobs:
+  update-readme:
+    name: Update Readme with Metrics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: nick22985/Dev-Stats@master
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: nick22985/Dev-Stats@master
+        with:
+          node-version: '16.10.0'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run dev --if-present
+        env:
+          EXCLUDE_PROJECT: ${{ secrets.EXCLUDE_PROJECT }}
