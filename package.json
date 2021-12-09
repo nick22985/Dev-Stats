@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --experimental-json-modules ./index.js",
-	"debug" : "node index.js > indesx.log  2>&1"
+    "debug": "node index.js > index.log  2>&1"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/nick22985/Wakatime-Stats#readme",
   "dependencies": {
+    "canvas": "^2.8.0",
     "chalk": "^5.0.0",
-    "chart": "github:jstrace/chart",
+    "d3-node": "^2.2.3",
+    "d3node-barchart": "^0.1.1",
     "lodash": "^4.17.21",
     "luxon": "^2.1.1",
     "node-fetch": "^3.1.0",

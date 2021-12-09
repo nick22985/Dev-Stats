@@ -11,8 +11,8 @@ import staticDevStats from './data/devStats.json'
 
 dotenv.config();
 
-let dev = false;
-let staticCapture = true;
+let dev = true;
+let staticCapture = false;
 
 
 let wakatime_api_key = process.env.WAKATIME_API_KEY;
@@ -69,7 +69,7 @@ async function start() {
 		}
 		let formatted = await formatDoc(devStats, settings)
 		writeFile('./format.md', formatted)
-		console.log(formatted)
+		// console.log(formatted)
 	}
 	catch (e){console.log(e)}
 }
