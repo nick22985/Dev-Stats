@@ -6,12 +6,12 @@ inputs:
   GH_TOKEN:
     description: 'Github access token with Repo Scope'
     required: true
-    default: ${{github.token}}
+    default: ${{secrets.GH_TOKEN}}
 
   WAKATIME_API_KEY:
     description: 'Wakatime API key'
     required: true
-    default: ${{github.wakakey}}
+    default: ${{secrets.WAKATIME_API_KEY}}
 
   SHOW_SHORT_INFO:
     description: 'Github Summary'
