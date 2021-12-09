@@ -6,8 +6,6 @@ import {getGithubStats, updateReadme} from './lib/github.js'
 import {formatDoc} from './lib/fomratting.js'
 import { stringify } from 'querystring';
 
-import staticDevStats from './data/devStats.json'
-
 dotenv.config();
 
 let wakatime_api_key = process.env.WAKATIME_API_KEY;
