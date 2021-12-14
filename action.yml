@@ -39,3 +39,11 @@ inputs:
     description: "Show Hostnames of computers"
     required: false
     default: true
+  SHOW_LANGUAGE_PER_REPO:
+    description: "Shows github repo language counts"
+    required: false
+    default: true
+  SHOW_PROJECTS:
+    description: "Show Projects worked on that week"
+    required: false
+    default: true
