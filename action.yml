@@ -23,3 +23,19 @@ inputs:
     description: "Shows timezone. Requires SHOW_BREAK_DOWN=true"
     required: false
     default: true
+  SHOW_EDITORS:
+    description: "Shows editors used in the week SHOW_BREAK_DOWN=true"
+    required: false
+    default: true
+  SHOW_LANGUAGES:
+    description: "Show week coding language breakdown"
+    required: false
+    default: true
+  SHOW_OS:
+    description: "Shows Operating System"
+    required: false
+    default: true
+  SHOW_HOSTS:
+    description: "Show Hostnames of computers"
+    required: false
+    default: true
