@@ -47,3 +47,6 @@ inputs:
     description: "Show Projects worked on that week"
     required: false
     default: true
+  EXCLUDE_PROJECT:
+    description: "You can exclude repos that you don't want showing on your readme page"
+    required: false
