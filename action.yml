@@ -8,3 +8,18 @@ inputs:
   GH_TOKEN:
     description: "Github access token with Repo Scope"
     required: true
+  WAKATIME_API_KEY:
+    description: "Wakatime API key"
+    required: true
+  SHOW_SHORT_INFO:
+    description: "Github Summary"
+    required: false
+    default: true
+  SHOW_BREAK_DOWN:
+    description: "Shows language activity for that week"
+    required: false
+    default: true
+  SHOW_TIMEZONE:
+    description: "Shows timezone. Requires SHOW_BREAK_DOWN=true"
+    required: false
+    default: true
