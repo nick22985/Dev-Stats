@@ -1,6 +1,9 @@
 name: Profile Readme Dev Stats
 description: Gets wakatime & github stats and displays it on your readme page
 author: nick22985
+branding:
+  icon: 'activity'
+  color: 'green'
 runs:
   using: 'node16'
   main: 'index.js'
