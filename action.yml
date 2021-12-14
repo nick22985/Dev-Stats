@@ -1,14 +1,11 @@
 name: Profile Readme Dev Stats
 description: Gets wakatime & github stats and displays it on your readme page
 author: nick22985
-runs:
-  using: 'node16'
-  main: 'index.js'
+
 inputs:
   GH_TOKEN:
     description: "Github access token with Repo Scope"
     required: true
-    default: ${{ github.token }}
   WAKATIME_API_KEY:
     description: "Wakatime API key"
     required: true
