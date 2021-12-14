@@ -4,3 +4,7 @@ author: nick22985
 runs:
   using: 'node16'
   main: 'index.js'
+inputs:
+  GH_TOKEN:
+    description: "Github access token with Repo Scope"
+    required: true
