@@ -2,7 +2,7 @@ name: Dev Stats
 
 on:
   schedule:
-    - cron: "0 11 * * *"
+    - cron: "0 15 * * *"
   workflow_dispatch:
 jobs:
   DevStats:
