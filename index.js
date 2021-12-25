@@ -1,10 +1,10 @@
 import * as dotenv from "dotenv";
 import chalk from "chalk";
-import {DateTime, Settings} from "luxon"; // Not needed maybe?
-import {getWakaStats} from "./lib/waka.js";
-import {getGithubStats, updateReadme} from "./lib/github.js";
-import {formatDoc} from "./lib/fomratting.js";
-import {stringify} from "querystring";
+import { DateTime, Settings } from "luxon"; // Not needed maybe?
+import { getWakaStats } from "./lib/waka.js";
+import { getGithubStats, updateReadme } from "./lib/github.js";
+import { formatDoc } from "./lib/fomratting.js";
+import { stringify } from "querystring";
 
 dotenv.config();
 
