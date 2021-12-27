@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/nick22985/Wakatime-Stats#readme",
   "dependencies": {
+    "@nick22985/wakatime-api": "^0.0.2",
     "@octokit/rest": "^18.12.0",
+    "axios": "^0.24.0",
     "chalk": "^5.0.0",
     "chart": "github:jstrace/chart",
     "dotenv": "^10.0.0",
@@ -28,7 +30,6 @@
     "lodash": "^4.17.21",
     "luxon": "^2.1.1",
     "node-fetch": "^3.1.0",
-    "timsort": "^0.3.0",
-    "wakatime-client": "^2.7.0"
+    "timsort": "^0.3.0"
   }
 }
