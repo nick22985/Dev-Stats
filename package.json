@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/nick22985/Wakatime-Stats#readme",
   "dependencies": {
-    "@nick22985/wakatime-api": "^0.0.2",
+    "@nick22985/wakatime-api": "^0.0.3",
     "@octokit/rest": "^18.12.0",
     "axios": "^0.24.0",
     "chalk": "^5.0.0",
