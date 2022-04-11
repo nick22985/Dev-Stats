@@ -29,7 +29,7 @@
     "js-base64": "^3.7.2",
     "lodash": "^4.17.21",
     "luxon": "^2.3.1",
-    "node-fetch": "^3.2.2",
+    "node-fetch": "^3.2.3",
     "timsort": "^0.3.0"
   }
 }
