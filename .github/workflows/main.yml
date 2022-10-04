@@ -32,3 +32,4 @@ jobs:
           SHOW_HOSTS: "true"
           SHOW_LANGUAGE_PER_REPO: "true"
           SHOW_PROJECTS: "true"
+          EXLUDE_PROJECT_NAME: "[Redacted]"
