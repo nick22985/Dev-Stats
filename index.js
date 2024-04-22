@@ -1,9 +1,11 @@
 import * as dotenv from "dotenv";
-import chalk from "chalk";
+
 import { DateTime, Settings } from "luxon"; // Not needed maybe?
-import { getWakaStats } from "./lib/waka.js";
 import { getGithubStats, updateReadme } from "./lib/github.js";
+
+import chalk from "chalk";
 import { formatDoc } from "./lib/fomratting.js";
+import { getWakaStats } from "./lib/waka.js";
 import { stringify } from "querystring";
 
 dotenv.config();
@@ -41,16 +43,14 @@ async function start() {
 	try {
 		if (wakatime_api_key == undefined) throw "No WakaTime Api Key Provided";
 		if (gh_token == undefined) throw "No Github Token Provided";
-		console.log("start");
 		console.log(chalk.white.bold("WakaStats"));
 		devStats.wakatime = await getWakaStats(wakatime_api_key);
-		console.log("Github Stats");
 		devStats.github = await getGithubStats(devStats.wakatime.timezone, gh_token);
-		console.log("Api Calls Completed");
 		Settings.defaultZoneName = devStats.wakatime.timezone;
 		devStats.currentDate = DateTime.local();
 		if (settings.excludeProjects) {
 			settings.excludeProjects = settings.excludeProjects.split(", ");
+			settings.excludeProjects = settings.excludeProjects.map((project) => project.toLowerCase());
 		}
 		let formatted = await formatDoc(devStats, settings);
 		console.log(formatted);
