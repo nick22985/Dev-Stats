@@ -22,7 +22,7 @@
   "dependencies": {
     "@nick22985/wakatime-api": "^1.0.1",
     "@octokit/rest": "^20.1.0",
-    "axios": "^1.6.8",
+    "axios": "^1.7.2",
     "chalk": "^5.3.0",
     "chart": "github:jstrace/chart",
     "dotenv": "^16.4.5",
